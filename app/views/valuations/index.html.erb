@@ -1,0 +1,23 @@
+
+<h1>Listing Valuations</h1>
+<h2><%= @activity.name %></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @valuations.each do |valuation| %>
+      <tr>
+        <td><%= valuation.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
